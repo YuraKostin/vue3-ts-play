@@ -1,9 +1,8 @@
 <template>
   <div id="nav">
     <router-link to="/">Home With Template Issue</router-link> |
-    <router-link to="/homeWithInput">home With Input Issue</router-link> |
-    <router-link to="/homeWithStore">home With Store Issue</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/eventHandlingIssue">home With Input Issue</router-link> |
+    <router-link to="/storeIssue">home With Store Issue</router-link> |
   </div>
   <router-view />
 </template>

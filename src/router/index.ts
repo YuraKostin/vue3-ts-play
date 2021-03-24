@@ -1,23 +1,24 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
-import HomeWithInput from "@/views/HomeWithInput.vue";
 import HomeWithStore from "@/views/HomeWithStore.vue";
+import TemplateVariableIssue from "@/views/TemplateVariableIssue.vue";
+import EventHandlingIssue from "@/views/EventHandlingIssue.vue";
+import StoreIssue from "@/views/StoreIssue.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "Template Variable issue",
+    component: TemplateVariableIssue
   },
   {
-    path: "/homeWithInput",
-    name: "HomeWithInput",
-    component: HomeWithInput
+    path: "/eventHandlingIssue",
+    name: "EventHandlingIssue",
+    component: EventHandlingIssue
   },
   {
-    path: "/homeWithStore",
-    name: "HomeWithStore",
-    component: HomeWithStore
+    path: "/storeIssue",
+    name: "StoreIssue",
+    component: StoreIssue
   },
 ];
 

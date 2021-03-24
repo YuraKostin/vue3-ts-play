@@ -7,7 +7,7 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import SomeInput from "@/components/SomeInput.vue";
-
+3
 export default defineComponent({
   name: "App",
 

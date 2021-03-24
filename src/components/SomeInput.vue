@@ -7,13 +7,17 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "SomeInput",
+  //
+  // emits: {
+  //   "some-input-change": function(value) {
+  //     return typeof value === "string";
+  //   }
+  // },
 
   methods: {
     handleInput(event: Event & { target: HTMLInputElement }) {
-      this.$emit("some-input-change", event.target.value);
+      this.$emit("some-input-change", 1);
     }
   }
 });
 </script>
-
-
