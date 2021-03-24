@@ -1,11 +1,11 @@
 <template>
   <div>
-    <SomeInput @change="handleChange" />
+    <SomeInput v-on:some-input-change="handleChange" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import {defineComponent} from "vue";
 import SomeInput from "@/components/SomeInput.vue";
 
 export default defineComponent({
@@ -16,10 +16,8 @@ export default defineComponent({
   },
 
   setup() {
-    const handleChange = (e: any): void => {
-      if (e && e.target && e.target.value) {
-        console.log(e.target.value);
-      }
+    const handleChange = (e: Event & { target: HTMLInputElement }): void => {
+      console.log(e.target.value);
     };
 
     return {
